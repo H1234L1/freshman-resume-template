@@ -1,0 +1,254 @@
+%-------------------------
+% 本科新生中文简历模板
+% 适合大一 / 大二申请科研、技术项目、实习等
+% 编译方式：XeLaTeX
+%-------------------------
+
+\documentclass[11pt,a4paper]{ctexart}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+
+\hypersetup{
+    hidelinks
+}
+
+% 页面设置
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.3in}
+\addtolength{\evensidemargin}{-0.3in}
+\addtolength{\textwidth}{0.8in}
+\addtolength{\topmargin}{-0.45in}
+\addtolength{\textheight}{0.9in}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% 列表间距
+\setlist[itemize]{
+    itemsep=2pt,
+    topsep=2pt,
+    parsep=0pt,
+    partopsep=0pt
+}
+
+% Section 格式
+\titleformat{\section}
+{\large\bfseries}
+{}{0em}{}[\color{black}\titlerule]
+
+\titlespacing*{\section}{0pt}{6pt}{4pt}
+
+%-------------------------
+% 自定义命令
+%-------------------------
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{0pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \small #3 & \small #4 \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeProject}[1]{
+    \item \textbf{#1}
+}
+
+\newcommand{\resumeSubHeadingListStart}{
+    \begin{itemize}[leftmargin=*]
+}
+
+\newcommand{\resumeSubHeadingListEnd}{
+    \end{itemize}
+}
+
+%-------------------------
+% 简历正文
+%-------------------------
+
+\begin{document}
+
+%----------个人信息----------
+
+\begin{center}
+    {\Huge \textbf{姓名}} \\[4pt]
+
+    \small
+    邮箱：
+    \href{mailto:yourname@university.edu}
+    {yourname@university.edu}
+    \ $|$ \
+    GitHub：
+    \href{https://github.com/username}
+    {username}
+    \ $|$ \
+    LinkedIn：
+    \href{https://linkedin.com/in/username}
+    {username}
+\end{center}
+
+\vspace{-7pt}
+
+
+%----------教育经历----------
+
+\section{教育经历}
+
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {某某大学}
+  {城市，国家}
+  {本科，拟主修计算机科学}
+  {20XX年9月 -- 20XX年6月}
+
+\resumeSubheading
+  {某某中学}
+  {城市，国家}
+  {选课；成绩 / 排名 / 学术荣誉}
+  {20XX年9月 -- 20XX年5月}
+
+\resumeSubHeadingListEnd
+
+
+%----------实践经历----------
+
+\section{实践经历}
+
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {大学图书馆}
+  {城市，国家}
+  {学生数据助理}
+  {20XX年1月 -- 20XX年5月}
+
+\begin{itemize}[leftmargin=1.5em]
+
+    \item
+    整理并清洗图书借阅记录，统一不同来源的数据格式，
+    协助生成每周统计报告。
+
+    \item
+    制作借阅量和高峰时段的可视化图表，
+    帮助工作人员分析图书使用情况。
+
+\end{itemize}
+
+\vspace{3pt}
+
+\resumeSubheading
+  {社区科技教育项目}
+  {城市，国家}
+  {编程志愿者}
+  {20XX年9月 -- 20XX年12月}
+
+\begin{itemize}[leftmargin=1.5em]
+
+    \item
+    在每周编程活动中协助学生完成基础程序设计练习，
+    并帮助排查常见代码错误。
+
+    \item
+    为小组活动设计变量、循环和函数相关的入门练习，
+    并参与课堂讲解。
+
+\end{itemize}
+
+\resumeSubHeadingListEnd
+
+
+%----------项目经历----------
+
+\section{项目经历}
+
+\resumeSubHeadingListStart
+
+\resumeProject{校园班车数据分析}
+
+\begin{itemize}[leftmargin=1.5em]
+
+    \item
+    整理校园班车历史到站数据，并分析不同线路和时间段的延误情况。
+
+    \item
+    制作可视化页面，对各线路平均延误时间和高峰时段进行展示。
+
+\end{itemize}
+
+
+\resumeProject{排序算法性能比较}
+
+\begin{itemize}[leftmargin=1.5em]
+
+    \item
+    实现多种常见排序算法，并在不同规模的数据集上比较运行时间。
+
+    \item
+    分析随机、近乎有序和逆序输入对不同算法性能的影响。
+
+\end{itemize}
+
+
+\resumeProject{课程任务管理网页}
+
+\begin{itemize}[leftmargin=1.5em]
+
+    \item
+    开发用于记录课程作业、截止日期和完成状态的简单网页应用。
+
+    \item
+    实现按课程、截止时间和优先级筛选任务的功能。
+
+\end{itemize}
+
+
+\resumeProject{文件自动整理工具}
+
+\begin{itemize}[leftmargin=1.5em]
+
+    \item
+    编写自动化脚本，根据文件类型和命名规则，
+    将下载文件自动分类到不同文件夹中。
+
+\end{itemize}
+
+\resumeSubHeadingListEnd
+
+
+%----------技能----------
+
+\section{技能}
+
+\begin{itemize}[leftmargin=1.5em, itemsep=1pt]
+
+    \item
+    \textbf{编程语言：}
+    语言 1，语言 2，语言 3
+
+    \item
+    \textbf{框架 / 库：}
+    框架 1，框架 2，框架 3
+
+    \item
+    \textbf{工具：}
+    工具 1，工具 2，工具 3
+
+    \item
+    \textbf{语言能力：}
+    语言 A，语言 B
+
+\end{itemize}
+
+\end{document}
