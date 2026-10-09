@@ -35,8 +35,8 @@ The template therefore keeps the structure simple and focuses on four sections:
 
 ## How to Use / 如何使用
 
-1. Download `resume_template.tex`  
-   下载 `resume_template.tex`
+1. Download Resume_English.tex or Resume_Chinese.tex 
+   下载 Resume_English.tex 或 Resume_Chinese.tex 
 
 2. Upload it to Overleaf, or open it with your local LaTeX environment  
    上传到 Overleaf，或者使用本地 LaTeX 环境打开
